@@ -1,0 +1,24 @@
+.bg,
+.bg1 {
+  max-width: 100%;
+}
+.bg1 {
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+  backdrop-filter: blur(70px);
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    rgba(255, 255, 255, 0.15);
+}
+.bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  z-index: 1;
+}

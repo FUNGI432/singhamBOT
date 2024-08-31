@@ -1,0 +1,179 @@
+.securityDashboard {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  font-weight: 600;
+  font-family: inherit;
+}
+.list,
+.watching {
+  text-decoration: none;
+  position: relative;
+  color: inherit;
+  display: inline-block;
+}
+.watching {
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+  min-width: 78px;
+}
+.list {
+  min-width: 23px;
+}
+.listWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-9xs-5) 0 0;
+}
+.icoutlineArrowDropDownIcon {
+  height: 24px;
+  width: 24px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.frameContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-9xs);
+}
+.allCameras {
+  text-decoration: none;
+  position: relative;
+  color: inherit;
+  display: inline-block;
+  min-width: 74px;
+}
+.cameraDropdown {
+  margin: 0;
+  width: 309px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+  text-align: left;
+  font-size: var(--font-size-sm);
+  color: var(--color-white);
+  font-family: var(--font-lato);
+}
+.frameGroup,
+.securityDashboardParent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 11px;
+}
+.frameGroup {
+  flex: 1;
+  gap: 47px;
+  max-width: calc(100% - 202px);
+  flex-shrink: 0;
+}
+.frameParent {
+  height: 1080px;
+  width: 792px;
+  flex-direction: row;
+  padding: var(--padding-13xl) 0 111px;
+  gap: 61px;
+  min-width: 792px;
+  max-width: 100%;
+}
+.dashboard,
+.frameParent,
+.mainContentWrapper {
+  box-sizing: border-box;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.mainContentWrapper {
+  flex: 1;
+  flex-direction: column;
+  padding: 36px 0 0;
+  min-width: 641px;
+  max-width: 100%;
+}
+.dashboard {
+  width: 100%;
+  position: relative;
+  box-shadow: 0 990px 277px transparent, 0 634px 253px rgba(0, 0, 0, 0.01),
+    0 356px 214px rgba(0, 0, 0, 0.05), 0 158px 158px rgba(0, 0, 0, 0.09),
+    0 40px 87px rgba(0, 0, 0, 0.1), 0 0 0 rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+  background-color: #101010;
+  border: 1px solid #000;
+  overflow: hidden;
+  flex-direction: row;
+  padding: 0 var(--padding-12xl) 0 0;
+  gap: 109px;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  font-size: 36px;
+  color: var(--color-white);
+  font-family: var(--font-lato);
+}
+@media screen and (max-width: 1550px) {
+  .frameParent {
+    flex: 1;
+  }
+  .dashboard {
+    flex-wrap: wrap;
+    padding-left: var(--padding-xl);
+    padding-right: var(--padding-xl);
+    padding-bottom: var(--padding-xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 1250px) {
+  .frameParent {
+    padding-top: var(--padding-2xl);
+    padding-bottom: var(--padding-53xl);
+    box-sizing: border-box;
+    min-width: 100%;
+  }
+  .dashboard {
+    gap: var(--gap-35xl);
+  }
+}
+@media screen and (max-width: 825px) {
+  .securityDashboard {
+    font-size: 29px;
+  }
+  .frameGroup {
+    gap: 23px;
+  }
+  .frameParent {
+    height: auto;
+    gap: 30px;
+    padding-top: var(--padding-xl);
+    padding-bottom: var(--padding-28xl);
+    box-sizing: border-box;
+  }
+  .mainContentWrapper {
+    min-width: 100%;
+  }
+  .dashboard {
+    gap: 27px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .securityDashboard {
+    font-size: 22px;
+  }
+  .frameGroup {
+    max-width: 100%;
+  }
+  .frameParent {
+    gap: var(--gap-mini);
+    padding-left: var(--padding-xl);
+    padding-right: var(--padding-xl);
+    box-sizing: border-box;
+  }
+}
